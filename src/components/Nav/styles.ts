@@ -8,8 +8,20 @@ export const Nav = styled.nav`
     background-color: ${colors.bg};
     color: white;
     text-align:center;
+ul{
+  display: flex;
+  flex-direction: row;
+}
+li {
+      list-style-type: none;
+      padding: 2rem;
+      text-align: center;
+      &:hover {
+        background-color: ${colors.green};
+        cursor: pointer;
+      }
 
-h3{
+h2{
     font-weight: 600
     font-size 36px
     line-height 54px
@@ -114,4 +126,5 @@ input#menu-toggle {
       }
     }
   }
+}
 `

@@ -9,20 +9,16 @@ export const Footer = styled.footer`
   justify-content: center;
   div {
     width: 50%;
-    text-align: center;
-  }
-  picture {
+    text-align: center, justify;
     width: 50%;
     display: flex;
-    align-items: center;
-    img {
-      @media (max-width: 768px) {
-        height: 60px;
-      }
-      @media (max-width: 425px) {
-        height: 40px;
-      }
-    }
+    background-image:src="assets/img/Footrodape.png";
+    border-radius: 4px;
+    border:4px solid black;
+  }
+  p{
+    font-family: verdana;
+    font-size: 20px; 
   }
 `
 
