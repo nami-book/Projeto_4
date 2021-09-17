@@ -26,13 +26,14 @@ export default createGlobalStyle`
 ` 
 
 export const colors = {
-  blue: "#3c7196",
-  green: "#50ba9e",
+  blue: "#290b89",
+  bgreen: "#8973d4",
   bg: "#3ca4b6ef, #21a8ade7, #21a8ade7, #21a8ade7 #21a8ade7 ",
   shadow: "rgba(0, 0, 0, 0.25)",
   white: "#ffffff",
   whitesmoker:"#f5f5f5",
   black: "#000000",
+  blackmenu:"#030303",
   gray: "#cccccc",
   solid:"79, 23, 232, 0.741"
 }

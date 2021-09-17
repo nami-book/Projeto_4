@@ -2,26 +2,23 @@ import styled from "styled-components"
 import { colors } from "styles/GlobalStyles"
 
 export const Footer = styled.footer`
-  border: 0.5rem solid ${colors.blue};
-  display: flex;
+  border: 0.3rem solid ${colors.black};
+  background: ${colors.blue};
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+
   div {
-    width: 50%;
+    color:${colors.whitesmoker};
+    width: 100%;
     text-align: center, justify;
-    width: 50%;
-    display: flex;
-    background-image:src="assets/img/Footrodape.png";
-    border-radius: 4px;
-    border:4px solid black;
+    display:-ms-flexbox;
+    background:${colors.blue};
+  
   }
   p{
-    font-family: verdana;
-    font-size: 20px; 
-  }
-`
 
-export const A = styled.a`
-  margin: 0 auto;
-`;
+    font-family: verdana;
+    font-size: 18px; 
+  }
+  
+`

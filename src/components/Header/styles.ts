@@ -22,6 +22,7 @@ export const Header = styled.header`
     font-size: 80px;
     margin-block-start: 30px;
     margin-block-end: 40px;
+    border: 0.3rem solid ${colors.black};
   }
 `
 

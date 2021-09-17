@@ -4,73 +4,72 @@ import { colors } from "styles/GlobalStyles"
 export const Nav = styled.nav`
 
     position: inline static;
-    border:0em 1em solid ${colors.bg};
-    background-color: ${colors.bg};
+    border: 0.3rem solid ${colors.black};
+    background-color: ${colors.blue};
     color: white;
     text-align:center;
 ul{
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
+  align-self: auto;
+  text-align:center;
+  color: white;
+
 }
 li {
       list-style-type: none;
-      padding: 2rem;
+      padding: 3rem;
       text-align: center;
       &:hover {
-        background-color: ${colors.green};
+        background-color: ${colors.blackmenu};
         cursor: pointer;
       }
 
 h2{
     font-weight: 600
-    font-size 36px
+    font-size 56px
     line-height 54px
     display flex
     align-items center
     text-align left
-    letter-spacing 0.05em
+    letter-spacing 0.08em
     text-transform capitalize
 };
 input#menu-toggle {
     display: none;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 400px) {
     ul {
       display: none;
     }
     ul li {
       text-align: left;
     }
-    label[for="menu-toggle"] {
-      display: flex;
-      flex: 1;
-      justify-content: flex-end;
-    }
+   
     label[for="menu-toggle"] div.menu-hamburger {
-      border: 1px solid ${colors.white};
-      width: 35px;
-      height: 15px;
-      margin: 15px 2px 5px 5px;
+      border: 0px solid ${colors.blackmenu};
+      width: 0px;
+      height: 0px;
       cursor: pointer;
     }
     label[for="menu-toggle"] div.menu-hamburger span.hamburger {
       position: relative;
       display: block;
-      background-color: ${colors.black};
-      width: 30px;
-      height: 2px;
+      background-color: ${colors.blackmenu};
+      width: 0px;
+      height: 0px;
     }
     label[for="menu-toggle"] div.menu-hamburger span.hamburger:before,
     label[for="menu-toggle"] div.menu-hamburger span.hamburger:after {
       position: absolute;
       display: block;
-      background-color: ${colors.black};
+      background-color: ${colors.whitesmoker};
       width: 100%;
       height: 100%;
-      content: "";
+      content: "By NicoleMB";
     }
     label[for="menu-toggle"] div.menu-hamburger span.hamburger:before {
-      top: -10px;
+      top: 0px;
     }
     label[for="menu-toggle"] div.menu-hamburger span.hamburger:after {
       bottom: -10px;
@@ -107,7 +106,6 @@ input#menu-toggle {
       ~ label[for="menu-toggle"]
       div.menu-hamburger
       span.hamburger:after {
-      bottom: 0px;
     }
     @keyframes fade-in {
       from {
