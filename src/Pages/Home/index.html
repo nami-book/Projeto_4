@@ -1,0 +1,21 @@
+import { Header, Nav,Project,Footer} from "components"; import { projects } from "services/data"; import * as S from "./styles"; const Home = () => { return (
+<>
+    <Header />
+    <Nav />
+    <S.Main>
+        {projects.map((item) => (
+        <Project key={item.id}>
+            <div class="login__container" <h1> className="login__title">Login</h1>
+                <form class="login__form">
+                    <input class="login__input" type="email" placeholder="e-mail" />
+                    <span class="login__input-border"></span>
+                    <input class="login__input" type="password" placeholder="senha" />
+                    <span class="login__input-border"></span>
+                    <button class="login__submit">Login</button>
+                    <a class="login__reset" href="#">Esqueceu a senha?</a>
+                </form>
+        </Project>
+        ))}
+    </S.Main>
+    <Footer />
+    </> ); }; export default Home;
